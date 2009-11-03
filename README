@@ -1,7 +1,7 @@
 RailsStaticPages
 ================
 
-This rails plugin allows one to easily create and view mostly static pages.  Typically this plugin is used to create terms & conditions, policy, price list, etc.
+This rails plugin allows one to easily create and view mostly static pages.  Typically this plugin is used to create terms & conditions, policy, price list, etc.  Note that the display action (which is cached) should be viewable by the public where as the other functions should only be viewable by the administrators in the system.
 
 This plugin when fully installed creates several controller/models/view directories in your application.  To CRUD a report just navigate to http://localhost:3000/infos/ .  Content pages can be reached via http://localhost:3000/PERMALINK/ .
 

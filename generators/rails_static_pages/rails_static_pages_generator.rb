@@ -5,8 +5,8 @@ class RailsStaticPagesGenerator < Rails::Generator::Base
   def manifest
     record do |r|
       r.migration_template 'migration.rb', "db/migrate"
-      r.route_name('content', '/infos/:permalink', { :controller => 'infos', :action => 'display' } )
-      r.route_resource :infos
+      r.route_name('content', '/content/:permalink', { :controller => 'infos', :action => 'display' } )
+      r.route_resources :infos
     end
   end
   
