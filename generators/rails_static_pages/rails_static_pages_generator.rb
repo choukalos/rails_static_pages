@@ -1,3 +1,5 @@
+require File.expand_path(File.dirname(__FILE__) + "/lib/insert_routes.rb")
+
 class RailsStaticPagesGenerator < Rails::Generator::Base 
   
   def manifest
