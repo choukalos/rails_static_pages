@@ -1,0 +1,26 @@
+<h1>Listing infos</h1>
+
+<%= link_to 'New info', new_info_path %>
+<p></p>
+
+<table>
+  <tr>
+    <th>Permalink</th>
+    <th>Title</th>
+    <th>Content</th>
+  </tr>
+
+<% @infos.each do |info| %>
+  <tr>
+    <td><%=h info.permalink %></td>
+    <td><%=h info.title %></td>
+    <td><%=h truncate(info.content, :length => 80, :omission => "...") %></td>
+<!--    <td><%= link_to 'Show', info %></td>  -->
+    <td><%= link_to 'Edit', edit_info_path(info) %></td>
+    <td><%= link_to 'Destroy', info, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+
+

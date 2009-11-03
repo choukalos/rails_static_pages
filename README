@@ -1,0 +1,40 @@
+RailsStaticPages
+================
+
+This rails plugin allows one to easily create and view mostly static pages.  Typically this plugin is used to create terms & conditions, policy, price list, etc.
+
+This plugin when fully installed creates several controller/models/view directories in your application.  To CRUD a report just navigate to http://localhost:3000/infos/ .  Content pages can be reached via http://localhost:3000/PERMALINK/ .
+
+Install
+=======
+
+How to Install
+
+	script/plugin install git://github.com/choukalos/rails_static_pages.git
+	
+	script/generate rails_static_pages
+	rake db:migrate
+	
+Add the following into your config/routes.rb
+	
+	map.content '/content/:permalink', :controller => 'infos', :action => 'display'
+	
+Usage
+=====
+
+Navigate to http://localhost:3000/infos/
+Note that static pages show up at http://localhost:3000/PERMALINK 
+
+
+Customization
+=============
+
+Edit the controller, model or views as appropriate
+
+
+Contact
+=======
+for hints, questions etc. please email choukalos[at]gmail.com
+
+Copyright (c) 2009 Chuck Choukalos, released under the MIT license
+

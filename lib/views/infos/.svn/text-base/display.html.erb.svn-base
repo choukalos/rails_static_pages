@@ -1,0 +1,6 @@
+<% cache do %>
+<h2><%=h @info.title %></h2>
+<p>	
+<%=@info.content %>
+</p>
+<% end %>
