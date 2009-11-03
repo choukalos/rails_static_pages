@@ -1,0 +1,16 @@
+# Infos test fixture
+one:
+    permalink:  one
+    title:      one title
+    content:    The first story
+    
+two:
+    permalink:  two
+    title:      two title
+    content:    The second story
+    
+three:
+    permalink:  three
+    title:      three title
+    content:    The third story
+    
